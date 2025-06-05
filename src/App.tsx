@@ -14,13 +14,28 @@ import Greeting from './props/Gretting.js';
 import UserCard from './props/UserCard.js';
 import ParentButtonOne from './props/ParentButtonOne.js';
 import ParentIncrementButton from './props/ParentIncrementButton.js';
+import ParentInputNotifier from './props/ParentInputNotifier.js';
+import ParentUserList from './props/ParentUserList.js';
+import ParentLoginForm from './props/ParentLoginForm.js';
+import HoverFont from './useStates/HoverFont.js';
+import AccessWithLimit from './useStates/AccessWithLimit.js';
+import DocumentTitleChanger from './useStates/DocumentTitleChanger.js';
+import PostLikes from './useStates/PostLikes.js';
+import CheckboxSummary from './useStates/CheckboxSummary.js';
+import LanguageSwitcher from './useStates/LanguageSwitcher.js';
+import MultiSwitch from './useStates/MultiSwitch.js';
+import AutoCounter from './useStates/AutoCounter.js';
+import DynamicColor from './useStates/DynamicColor.js';
+import ClickHistory from './useStates/ClickHistory.js';
+import LogEffect from './useEffect/LogEffect.js';
+import FetchUser from './useEffect/FetchUser.js';
 
 
 function App() {
   const userData = { name: "Carlos", age: 30 };
   return (
     <div className="App">
-      <h1>¡Hola React con Vite!</h1>
+      {/* <h1>¡Hola React con Vite!</h1>
       <HelloWorld />
       <WelcomeUser />
       
@@ -39,6 +54,22 @@ function App() {
       <UserCard user={userData} />
       <ParentButtonOne />
       <ParentIncrementButton />
+      <br/>
+      <ParentInputNotifier />
+      <ParentUserList />
+      <ParentLoginForm /> */}
+      <HoverFont />
+      <AccessWithLimit />
+      <DocumentTitleChanger />
+      <PostLikes />
+      <CheckboxSummary />
+      <LanguageSwitcher />
+      <MultiSwitch />
+      <AutoCounter />
+      <DynamicColor />
+      <ClickHistory />
+      <LogEffect />
+      <FetchUser />
     </div>
   );
 }
