@@ -180,23 +180,108 @@ export default function App() {
 */}
 
 
+// import './App.css'
+// import Contador from './useCallback/Contador';
+// import ListaCallback from './useCallback/ListaCallback';
+// import PadreCallback from './useCallback/PadreCallback';
+// import SaludoCallback from './useCallback/SaludoCallback';
+// import CirculoColorido from "./useRef/CirculoColorido";
+// import FocoAutomatico from './useRef/FocoAutomatico';
+// import MoverCaja from './useRef/MoverCaja';
+// import ReproductorSonido from './useRef/ReproductorSonido';
+// import ScrollDemo from './useRef/ScrollDemo';
+
+
+// function App() {
+//   const elementos = ["Uno", "Dos", "Tres", "Cuatro"];
+//   return (
+//     <div className="App">
+//       <FocoAutomatico />
+//       <CirculoColorido />
+//       <ScrollDemo />
+//       <ReproductorSonido />
+//       <MoverCaja />
+//       <Contador />
+//       <PadreCallback />
+//       <SaludoCallback />
+//       <h2>Ejemplo de Lista: </h2>
+//       <ListaCallback items={elementos} />
+//     </div>
+//   );
+// }
+// export default App;
+
+// import './App.css'
+// import ContadorLetras from './useMemo/ContadorLetras';
+// import ExpensiveCalc from './useMemo/ExpensiveCalc';
+// import FiltroLista from './useMemo/FiltroLista';
+// import PrimosMemo from './useMemo/PrimosMemo';
+// import TablaOrdenada from './useMemo/TablaOrdenada';
+// import CarritoReducer from './useReducer/CarritoReducer';
+// import ContadorReducer from './useReducer/ContadorReducer';
+// import FormSteps from './useReducer/FormSteps';
+// import FormularioReducer from './useReducer/FormularioReducer';
+// import ListaReducer from './useReducer/ListaReducer';
+
+//  function App() {
+//    return (
+//      <div className="App">
+//        <ContadorReducer />
+//        <FormularioReducer />
+//        <ListaReducer />
+//        <CarritoReducer />
+//        <FormSteps />
+//        <ExpensiveCalc />
+//        <FiltroLista />
+//        <TablaOrdenada />
+//        <PrimosMemo />
+//        <ContadorLetras />
+//      </div>
+//    );
+// }
+// export default App;
+
 import './App.css'
-import CirculoColorido from "./useRef/CirculoColorido";
-import FocoAutomatico from './useRef/FocoAutomatico';
-import MoverCaja from './useRef/MoverCaja';
-import ReproductorSonido from './useRef/ReproductorSonido';
-import ScrollDemo from './useRef/ScrollDemo';
+import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
+import GraficoDiferido from './useDeferredValue/GraficoDiferido';
+import ListaOrdenada from './useDeferredValue/ListaOrdenada';
+import TablaDiferida from './useDeferredValue/TablaDiferida';
+import ValidacionEmail from './useDeferredValue/ValidacionEmail';
+import CampoTexto from './useId/CampoTexto';
+import ListaInputs from './useId/ListaInputs';
+import LoginCampos from './useId/LoginCampos';
+import SeccionFormulario from './useId/SeccionFormulario';
+import { ControladorPanel } from './useImperativeHandle/ControladorPanel';
+import { FormularioConRef } from './useImperativeHandle/FormularioConRef';
+import { PadreConInput } from './useImperativeHandle/PadreConInput';
+import { PaginaScroll } from './useImperativeHandle/PaginaScroll';
+import { BuscadorUseTransition } from './useTransition/BuscadorUseTransition';
+import { GaleriaDiferida } from './useTransition/GaleriaDiferida';
+import { ListaTransicion } from './useTransition/ListaTransicion';
+import { TabsUseTransition } from './useTransition/TabsUseTransition';
 
-
-function App() {
-  return (
-    <div className="App">
-      <FocoAutomatico />
-      <CirculoColorido />
-      <ScrollDemo />
-      <ReproductorSonido />
-      <MoverCaja />
-    </div>
-  );
+ function App() {
+   return (
+     <div className="App">
+       <CampoTexto />
+       <LoginCampos />
+       <ListaInputs/>
+       <SeccionFormulario/>
+       <BuscadorUseTransition />
+       <TabsUseTransition />
+       <GaleriaDiferida />
+       <ListaTransicion />
+       <BusquedaDiferida />
+       <TablaDiferida />
+       <ListaOrdenada/>
+       <GraficoDiferido/>
+       <ValidacionEmail/>
+       <PadreConInput/>
+       <ControladorPanel/>
+       <FormularioConRef/>
+       <PaginaScroll/>
+       
+     </div>
+   );
 }
 export default App;
