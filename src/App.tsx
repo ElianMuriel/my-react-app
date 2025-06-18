@@ -179,7 +179,6 @@ export default function App() {
 
 */}
 
-
 // import './App.css'
 // import Contador from './useCallback/Contador';
 // import ListaCallback from './useCallback/ListaCallback';
@@ -241,47 +240,92 @@ export default function App() {
 // }
 // export default App;
 
-import './App.css'
-import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
-import GraficoDiferido from './useDeferredValue/GraficoDiferido';
-import ListaOrdenada from './useDeferredValue/ListaOrdenada';
-import TablaDiferida from './useDeferredValue/TablaDiferida';
-import ValidacionEmail from './useDeferredValue/ValidacionEmail';
-import CampoTexto from './useId/CampoTexto';
-import ListaInputs from './useId/ListaInputs';
-import LoginCampos from './useId/LoginCampos';
-import SeccionFormulario from './useId/SeccionFormulario';
-import { ControladorPanel } from './useImperativeHandle/ControladorPanel';
-import { FormularioConRef } from './useImperativeHandle/FormularioConRef';
-import { PadreConInput } from './useImperativeHandle/PadreConInput';
-import { PaginaScroll } from './useImperativeHandle/PaginaScroll';
-import { BuscadorUseTransition } from './useTransition/BuscadorUseTransition';
-import { GaleriaDiferida } from './useTransition/GaleriaDiferida';
-import { ListaTransicion } from './useTransition/ListaTransicion';
-import { TabsUseTransition } from './useTransition/TabsUseTransition';
+// import './App.css'
+// import BusquedaDiferida from './useDeferredValue/BusquedaDiferida';
+// import GraficoDiferido from './useDeferredValue/GraficoDiferido';
+// import ListaOrdenada from './useDeferredValue/ListaOrdenada';
+// import TablaDiferida from './useDeferredValue/TablaDiferida';
+// import ValidacionEmail from './useDeferredValue/ValidacionEmail';
+// import CampoTexto from './useId/CampoTexto';
+// import ListaInputs from './useId/ListaInputs';
+// import LoginCampos from './useId/LoginCampos';
+// import SeccionFormulario from './useId/SeccionFormulario';
+// import { ControladorPanel } from './useImperativeHandle/ControladorPanel';
+// import { FormularioConRef } from './useImperativeHandle/FormularioConRef';
+// import { PadreConInput } from './useImperativeHandle/PadreConInput';
+// import { PaginaScroll } from './useImperativeHandle/PaginaScroll';
+// import { BuscadorUseTransition } from './useTransition/BuscadorUseTransition';
+// import { GaleriaDiferida } from './useTransition/GaleriaDiferida';
+// import { ListaTransicion } from './useTransition/ListaTransicion';
+// import { TabsUseTransition } from './useTransition/TabsUseTransition';
 
- function App() {
-   return (
-     <div className="App">
-       <CampoTexto />
-       <LoginCampos />
-       <ListaInputs/>
-       <SeccionFormulario/>
-       <BuscadorUseTransition />
-       <TabsUseTransition />
-       <GaleriaDiferida />
-       <ListaTransicion />
-       <BusquedaDiferida />
-       <TablaDiferida />
-       <ListaOrdenada/>
-       <GraficoDiferido/>
-       <ValidacionEmail/>
-       <PadreConInput/>
-       <ControladorPanel/>
-       <FormularioConRef/>
-       <PaginaScroll/>
-       
-     </div>
-   );
+//  function App() {
+//    return (
+//      <div className="App">
+//        <CampoTexto />
+//        <LoginCampos />
+//        <ListaInputs/>
+//        <SeccionFormulario/>
+//        <BuscadorUseTransition />
+//        <TabsUseTransition />
+//        <GaleriaDiferida />
+//        <ListaTransicion />
+//        <BusquedaDiferida />
+//        <TablaDiferida />
+//        <ListaOrdenada/>
+//        <GraficoDiferido/>
+//        <ValidacionEmail/>
+//        <PadreConInput/>
+//        <ControladorPanel/>
+//        <FormularioConRef/>
+//        <PaginaScroll/>
+
+//      </div>
+//    );
+// }
+// export default App;
+
+// import './App.css'
+// import { ScrollAutoTS } from './useLayoutEffect/ScrollAutoTS';
+// import MostrarSinParpadeoTS from './useLayoutEffect/MostrarSinParpadeoTS';
+// import { CentradoVerticalTS } from './useLayoutEffect/CentradoVerticalTS';
+// import MedicionCaja from './useLayoutEffect/MedicionCaja';
+
+
+//  function App() {
+//    return (
+//      <div className="App">
+//        < ScrollAutoTS/>
+//        < MostrarSinParpadeoTS/>
+//        < CentradoVerticalTS/>
+//        < MedicionCaja/>
+//      </div>
+//    );
+// }
+// export default App;
+
+import './App.css'
+import { Link } from 'react-router-dom';
+import AppRoutes from './AppRoutes';
+
+export default function App() {
+  return (
+    <>
+      <nav style={{ display: 'flex', gap: '1rem', padding: '1rem', background: '#21262d' }}>
+        <Link to="/">Inicio</Link>
+        <Link to="/about">Acerca de</Link>
+        <Link to="/productos">Productos</Link>
+        <Link to="/contacto">Contacto</Link>
+        <Link to="/address">Dirección</Link>
+        <Link to="/sales">Ventas</Link>
+        <Link to="/use-states">Use states</Link>
+        <Link to="/use-effect">Use effects</Link>
+        <Link to="/formulario-basico">Formulario Basico</Link>
+        <Link to="/formulario-rhf">Formulario RHF</Link>
+        <Link to="/formulario-zod">Formulario Zod</Link>
+      </nav>
+
+      <AppRoutes />
+    </>
+  );
 }
-export default App;
