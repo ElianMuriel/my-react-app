@@ -179,6 +179,7 @@ export default function App() {
 
 */}
 
+
 // import './App.css'
 // import Contador from './useCallback/Contador';
 // import ListaCallback from './useCallback/ListaCallback';
@@ -304,28 +305,71 @@ export default function App() {
 // }
 // export default App;
 
+// import './App.css'
+// import { Link } from 'react-router-dom';
+// import AppRoutes from './AppRoutes';
+
+// export default function App() {
+//   return (
+//     <>
+//       <nav style={{ display: 'flex', gap: '1rem', padding: '1rem', background: '#21262d' }}>
+//         <Link to="/">Inicio</Link>
+//         <Link to="/about">Acerca de</Link>
+//         <Link to="/productos">Productos</Link>
+//         <Link to="/contacto">Contacto</Link>
+//         <Link to="/address">Dirección</Link>
+//         <Link to="/sales">Ventas</Link>
+//         <Link to="/use-states">Use states</Link>
+//         <Link to="/use-effect">Use effects</Link>
+//         <Link to="/formulario-basico">Formulario Basico</Link>
+//         <Link to="/formulario-rhf">Formulario RHF</Link>
+//         <Link to="/formulario-zod">Formulario Zod</Link>
+//       </nav>
+
+//       <AppRoutes />
+//     </>
+//   );
+// }
+
 import './App.css'
-import { Link } from 'react-router-dom';
-import AppRoutes from './AppRoutes';
+import AccordionExample from './bootstrap/Accordion';
+import AlerExample from './bootstrap/Alert';
+import { BootstrapAlert } from './bootstrap/BootstrapAlert';
+import { BootstrapButton } from './bootstrap/BootstrapButton';
+import { BootstrapCard } from './bootstrap/BootstrapCard';
+import { BootstrapForm } from './bootstrap/BootstrapForm';
+import { ButtonCss } from './css/ButtonCss';
+import { ButtonEmotion } from './css/ButtonEmotion';
+import { ButtonStyled } from './css/ButtonStyled';
+import ThemedComponent from './css/ThemedComponent';
+import { ThemeProvider } from './css/ThemeProvider';
+import { Alert } from './tailwind/Alert';
+import { Button } from './tailwind/Button';
+import { Card } from './tailwind/Card';
+import { Input } from './tailwind/Input';
+import { Table } from './tailwind/Table';
 
 export default function App() {
   return (
     <>
-      <nav style={{ display: 'flex', gap: '1rem', padding: '1rem', background: '#21262d' }}>
-        <Link to="/">Inicio</Link>
-        <Link to="/about">Acerca de</Link>
-        <Link to="/productos">Productos</Link>
-        <Link to="/contacto">Contacto</Link>
-        <Link to="/address">Dirección</Link>
-        <Link to="/sales">Ventas</Link>
-        <Link to="/use-states">Use states</Link>
-        <Link to="/use-effect">Use effects</Link>
-        <Link to="/formulario-basico">Formulario Basico</Link>
-        <Link to="/formulario-rhf">Formulario RHF</Link>
-        <Link to="/formulario-zod">Formulario Zod</Link>
-      </nav>
+      < ButtonCss />
+      < ButtonEmotion />
+      < ButtonStyled />
+      < ThemeProvider>
+        <ThemedComponent/>
+      </ThemeProvider>
+      < BootstrapButton />
+      < BootstrapAlert />
+      < BootstrapCard />
+      < BootstrapForm />
+      < AccordionExample />
+      < AlerExample />
+      < Alert />
+      < Button />
+      < Card />
+      < Input />
+      < Table />
 
-      <AppRoutes />
     </>
   );
 }
